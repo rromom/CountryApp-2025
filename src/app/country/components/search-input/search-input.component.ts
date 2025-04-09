@@ -1,4 +1,5 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, output } from '@angular/core';
+import { RESTCountry } from '../../interfaces/res-countries.interface';
 
 @Component({
   selector: 'country-search-input',
@@ -10,9 +11,6 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
 export class SearchInputComponent {
 
   placeholder = input('Search');
+  value = output<string>();
 
-
-  onSearch( value: string ) {
-
-  }
  }

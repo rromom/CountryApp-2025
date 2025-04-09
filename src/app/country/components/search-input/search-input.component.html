@@ -5,7 +5,7 @@
     <input type="search" required
     [placeholder]="placeholder()"
     #txtSearchBox
-    (keyup.enter)="onSearch(txtSearchBox.value)"
+    (keyup.enter)="value.emit(txtSearchBox.value)"
     />
 
   </label>
